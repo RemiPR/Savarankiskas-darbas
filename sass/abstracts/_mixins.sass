@@ -9,8 +9,10 @@
         font-size: $f-size-32
         font-weight: $f-wt-400
 @mixin p
-    p
-        font-family: $rbt-ff
-        font-size: $f-size-16
-        font-weight: $f-wt-400
-        color: white
+    font-family: $rbt-ff
+    font-size: $f-size-16
+    font-weight: $f-wt-400
+@mixin links
+    a
+        @include p
+        color: #ffffff

@@ -57,12 +57,38 @@ h1 {
   font-weight: 700;
 }
 
+h3 {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+a {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.nav-wrapper {
+  opacity: 0.9;
+  width: 100%;
+  background-color: lightgray;
+  overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .main-nav {
-  background-color: lightblue;
+  width: 75%;
 }
 
 img[alt=nav-logo] {
-  height: 100px;
+  height: 80px;
   width: 250px;
 }
 
@@ -79,7 +105,7 @@ img[alt=nav-logo] {
   background-repeat: no-repeat;
 }
 
-.main-container {
+.main-container, .main-nav {
   width: 75%;
   margin: 0 auto;
 }
@@ -88,4 +114,5 @@ img[alt=nav-logo] {
   background-image: url(../img/index-bg.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  height: 100vh;
 }/*# sourceMappingURL=main.css.map */
