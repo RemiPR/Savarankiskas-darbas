@@ -47,14 +47,45 @@ input {
   border-radius: 0;
 }
 
-h1 {
-  font-family: Roboto;
+li a {
+  text-decoration: none;
 }
 
-#home {
-  min-height: 100vh;
-  background-image: url(../img/welcome-bg-img.jpg);
+h1 {
+  font-family: Montserrat;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.main-nav {
+  background-color: lightblue;
+}
+
+img[alt=nav-logo] {
+  height: 100px;
+  width: 250px;
+}
+
+.nav-links {
+  float: right;
+}
+.nav-links li {
+  display: inline-block;
+}
+
+.footer-logo {
+  background-image: url(https://ibiblioteka.lt/metis/assets/img/kla-logo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.bg-img-wrapper {
+  background-image: url(../img/index-bg.jpg);
   background-size: 100% 100%;
-  background-position: center;
   background-repeat: no-repeat;
 }/*# sourceMappingURL=main.css.map */
