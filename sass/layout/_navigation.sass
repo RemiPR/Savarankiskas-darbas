@@ -1,5 +1,5 @@
 .nav-wrapper
-    opacity: 0.9
+    opacity: 0.95
     width: 100%
     background-color: lightgray
     overflow: hidden
@@ -9,10 +9,16 @@
     width: 100%
 .main-nav
     width: 75%
+    position: relative
 img[alt="nav-logo"]
     height: 80px
     width: 250px
 .nav-links
-    float: right
+    position: absolute
+    top: 50%
+    left: 85%
+    transform: translate(-50%, -50%)
+    width: 40%
     li
-        display: inline-block
+        display: inline-flex
+        margin: 15px

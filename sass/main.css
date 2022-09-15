@@ -65,13 +65,27 @@ h3 {
 
 a {
   font-family: Roboto;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  color: #ffffff;
+  color: #72a4d4;
+}
+
+.nav-links li a:hover {
+  color: #fcfdfe;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+main h1 {
+  cursor: default;
+}
+main .h1-wrapper:hover span {
+  color: #3a7ebf;
+  transition: 0.5s;
 }
 
 .nav-wrapper {
-  opacity: 0.9;
+  opacity: 0.95;
   width: 100%;
   background-color: lightgray;
   overflow: hidden;
@@ -85,6 +99,7 @@ a {
 
 .main-nav {
   width: 75%;
+  position: relative;
 }
 
 img[alt=nav-logo] {
@@ -93,10 +108,15 @@ img[alt=nav-logo] {
 }
 
 .nav-links {
-  float: right;
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  width: 40%;
 }
 .nav-links li {
-  display: inline-block;
+  display: inline-flex;
+  margin: 15px;
 }
 
 .footer-logo {
@@ -115,4 +135,56 @@ img[alt=nav-logo] {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+main h1 {
+  padding-top: 200px;
+  text-align: center;
+  color: #e8f4f8;
+}
+main form {
+  margin-top: 100px;
+}
+main form input {
+  width: 40%;
+  height: 40px;
+  background-color: #e8f4f8;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+main form input:focus {
+  border: 5px solid gray;
+}
+main form ::-moz-placeholder {
+  color: #72a4d4;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+main form :-ms-input-placeholder {
+  color: #72a4d4;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+main form ::placeholder {
+  color: #72a4d4;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+main form .search-btn {
+  border: 1px solid gray;
+  border-radius: 3px;
+  height: 40px;
+  width: 150px;
+  background-color: #0a7fef;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+main form .search-btn:hover {
+  border: 1px solid white;
+  transition: 0.7s;
+  color: #e8f4f8;
 }/*# sourceMappingURL=main.css.map */
