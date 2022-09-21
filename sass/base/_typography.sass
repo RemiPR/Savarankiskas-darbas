@@ -4,13 +4,33 @@
 .nav-links
     li
         a:hover
-            color: #fcfdfe
+            color: white
             transition: 0.5s
             text-decoration: underline
 main
     h1
         cursor: default
+        text-align: center
+        color: #e8f4f8
     .h1-wrapper:hover
         span
-            color: #3a7ebf
+            color: $h-hover-blue
             transition: 0.5s
+    ::placeholder
+        color: #72a4d4
+    ::placeholder, .search-btn
+        @include p
+    legend, .legend-style
+        font-family: $mt-ff
+        font-size: $f-size-32
+        font-weight: $f-wt-700
+        text-align: center
+        color: #e8f4f8
+        cursor: default
+        a
+            text-decoration: none
+    legend:hover
+        .legend-style
+            cursor: pointer
+            text-decoration: underline
+            color: $h-hover-blue
