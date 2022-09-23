@@ -8,17 +8,9 @@
             transition: 0.5s
             text-decoration: underline
 main
-    h1
-        cursor: default
-        text-align: center
-        color: #e8f4f8
-    .h1-wrapper:hover
-        span
-            color: $h-hover-blue
-            transition: 0.5s
-    ::placeholder
+    ::placeholder, select[name="book-types"]
         color: #72a4d4
-    ::placeholder, .search-btn
+    ::placeholder, .search-btn, select[name="book-types"], .book-types
         @include p
     legend, .legend-style
         font-family: $mt-ff
@@ -34,3 +26,11 @@ main
             cursor: pointer
             text-decoration: underline
             color: $h-hover-blue
+h1
+    cursor: default
+    text-align: center
+    color: #e8f4f8
+.main-heading:hover
+    span
+        color: $h-hover-blue
+        transition: 0.5s

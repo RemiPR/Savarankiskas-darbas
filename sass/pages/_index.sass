@@ -1,37 +1,38 @@
 main
-    h1
+    .h1-wrapper
         padding-top: 200px
     form
         margin-top: 100px
-        input
-            width: 75%
+        input[type="text"]
+            width: 55%
             height: 40px
             background-color: #e8f4f8
             border: 1px solid gray
             border-radius: 3px
-            vertical-align: top
-        input:focus
+        input[type="text"]:focus, select[name="book-types"]:focus
             border: 5px solid gray
             transition: 0.3s
-        input:focus::placeholder
+        input[type="text"]:focus::placeholder
             color: black
             transition: 0.5s
-        input:hover
+        input[type="text"]:hover, select[name="book-types"]:hover
             border: 2px solid gray
             transition: 0.5s
-        .search-btn
-            border: 1px solid gray
-            border-radius: 3px
+        select[name="book-types"], .search-btn
             height: 40px
             width: 150px
+            border: 1px solid gray
+            border-radius: 3px
+            vertical-align: middle
+            margin-left: 5px
+        .search-btn
             background-color: #0a7fef
-            float: right
         .search-btn:hover
             border: 1px solid white
             transition: 0.7s
             color: #e8f4f8
         .search-wrapper
-            width: 60%
+            width: 70%
             margin: 0 auto
     legend
         margin: 75px

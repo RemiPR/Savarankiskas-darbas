@@ -32,12 +32,12 @@
       </div>
       <div class="main-container">
         <main>
-          <h1>
-            <span class="h1-wrapper"
-              >KVK State University of Applied Sciences
-              <span class="h1-style-wrapper">E</span>-Library</span
-            >
-          </h1>
+          <div class="h1-wrapper">
+            <h1 class="main-heading">
+              KVK State University of Applied Sciences
+              <span class="h1-style-wrapper">E</span>-Library
+            </h1>
+          </div>
           <form>
             <fieldset>
               <legend>
@@ -50,13 +50,18 @@
                   type="text"
                   placeholder="Type what you are looking for..."
                 />
+                <select name="book-types">
+                  <option class="book-types" value="E-Books">Books</option>
+                  <option value="Journals">Journals</option>
+                  <option value="Articles">Articles</option>
+                </select>
                 <button class="search-btn" type="submit">Search</button>
               </div>
             </fieldset>
           </form>
           <div class="index-btn-wrapper">
             <a class="about-btn" href="#about-us"
-              >Learn more
+              >Who we are
               <br />
               &#8595;</a
             >
@@ -66,20 +71,42 @@
       </div>
     </div>
     <div id="about-us">
-      <h1>KVK State University of Applied Sciences E-Library</h1>
-      <div>
-        <h3></h3>
-        <div class="top-left-card">
-          <article><p></p></article>
+      <div class="main-container">
+        <div class="h1-wrapper">
+          <h1 class="main-heading">
+            KVK State University of Applied Sciences
+            <span class="h1-style-wrapper">E</span>-Library
+          </h1>
         </div>
-        <div class="top-right-card">
-          <article><p></p></article>
-        </div>
-        <div class="bottom-left-card">
-          <article><p></p></article>
-        </div>
-        <div class="bottom-right-card">
-          <article><p></p></article>
+        <div class="outer-card-wrapper">
+          <div class="center-card">
+            <div class="inner-card-wrapper">
+              <div class="inner-left-content">
+                <ol>
+                  <li>
+                    We're the largest e-library system in Lithuania, combining
+                    more than 1200 libraries.
+                  </li>
+                  <li>All library resourses and online</li>
+                  <li></li>
+                  <li></li>
+                </ol>
+              </div>
+              <div class="inner-right-content"></div>
+            </div>
+          </div>
+          <div class="left-card">
+            <article>
+              <h3>123</h3>
+              <p></p>
+            </article>
+          </div>
+          <div class="right-card">
+            <article>
+              <h3>123</h3>
+              <p></p>
+            </article>
+          </div>
         </div>
       </div>
     </div>

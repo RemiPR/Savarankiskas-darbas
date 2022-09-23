@@ -76,22 +76,15 @@ a {
   text-decoration: underline;
 }
 
-main h1 {
-  cursor: default;
-  text-align: center;
-  color: #e8f4f8;
-}
-main .h1-wrapper:hover span {
-  color: #0080ff;
-  transition: 0.5s;
-}
 main ::-moz-placeholder {
   color: #72a4d4;
 }
+
 main :-ms-input-placeholder {
   color: #72a4d4;
 }
-main ::placeholder {
+
+main ::placeholder, main select[name=book-types] {
   color: #72a4d4;
 }
 main ::-moz-placeholder {
@@ -104,7 +97,7 @@ main :-ms-input-placeholder {
   font-size: 1.25rem;
   font-weight: 400;
 }
-main ::placeholder, main .search-btn {
+main ::placeholder, main .search-btn, main select[name=book-types], main .book-types {
   font-family: Roboto;
   font-size: 1.25rem;
   font-weight: 400;
@@ -124,6 +117,17 @@ main legend:hover .legend-style {
   cursor: pointer;
   text-decoration: underline;
   color: #0080ff;
+}
+
+h1 {
+  cursor: default;
+  text-align: center;
+  color: #e8f4f8;
+}
+
+.main-heading:hover span {
+  color: #0080ff;
+  transition: 0.5s;
 }
 
 .nav-wrapper {
@@ -179,49 +183,51 @@ img[alt=nav-logo] {
   height: 100vh;
 }
 
-main h1 {
+main .h1-wrapper {
   padding-top: 200px;
 }
 main form {
   margin-top: 100px;
 }
-main form input {
-  width: 75%;
+main form input[type=text] {
+  width: 55%;
   height: 40px;
   background-color: #e8f4f8;
   border: 1px solid gray;
   border-radius: 3px;
-  vertical-align: top;
 }
-main form input:focus {
+main form input[type=text]:focus, main form select[name=book-types]:focus {
   border: 5px solid gray;
   transition: 0.3s;
 }
-main form input:focus::-moz-placeholder {
+main form input[type=text]:focus::-moz-placeholder {
   color: black;
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
-main form input:focus:-ms-input-placeholder {
+main form input[type=text]:focus:-ms-input-placeholder {
   color: black;
   -ms-transition: 0.5s;
   transition: 0.5s;
 }
-main form input:focus::placeholder {
+main form input[type=text]:focus::placeholder {
   color: black;
   transition: 0.5s;
 }
-main form input:hover {
+main form input[type=text]:hover, main form select[name=book-types]:hover {
   border: 2px solid gray;
   transition: 0.5s;
 }
-main form .search-btn {
-  border: 1px solid gray;
-  border-radius: 3px;
+main form select[name=book-types], main form .search-btn {
   height: 40px;
   width: 150px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+main form .search-btn {
   background-color: #0a7fef;
-  float: right;
 }
 main form .search-btn:hover {
   border: 1px solid white;
@@ -229,7 +235,7 @@ main form .search-btn:hover {
   color: #e8f4f8;
 }
 main form .search-wrapper {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 main legend {
@@ -275,4 +281,29 @@ main .index-btn-wrapper #btn-top:hover {
 
 #about-us {
   height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(164, 164, 164) 11%, rgb(164, 164, 164) 40%, rgb(164, 164, 164) 50%, rgb(164, 164, 164) 60%, rgb(164, 164, 164) 89%, rgb(255, 255, 255) 100%);
+}
+#about-us .main-container .h1-wrapper {
+  padding-top: 100px;
+}
+#about-us .main-container .outer-card-wrapper {
+  font-size: 0;
+}
+#about-us .main-container .outer-card-wrapper .left-card, #about-us .main-container .outer-card-wrapper .right-card {
+  display: inline-block;
+  width: 40%;
+  height: 250px;
+  background-color: blue;
+}
+#about-us .main-container .center-card {
+  width: 75%;
+  height: 250px;
+  background-color: green;
+  margin: 0 auto;
+}
+#about-us .main-container .right-card {
+  float: right;
 }/*# sourceMappingURL=main.css.map */
